@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c; /* Darker background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form container */
+.form-container, .search-container {
+    background-color: #3a3a3a; /* Dark grey form background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px; /* Spacing between forms */
+}
+
+/* Form headers */
+.form-container h2, .search-container h1 {
+    color: #ffffff; /* White text for headers */
+    margin-bottom: 10px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    color: #dddddd; /* Light grey for labels */
+    margin-bottom: 5px;
+}
+
+.search-container input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.form-group input, .search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555555; /* Darker input borders */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #2c2c2c; /* Dark input background */
+    color: #ffffff; /* White text */
+}
+
+/* Input focus effect */
+.form-group input:focus, .search-container input[type="text"]:focus {
+    border-color: #00bcd4; /* Cool cyan border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+    background-color: #333333; /* Slightly lighter on focus */
+}
+
+/* Signup button */
+.signup-button, .search-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00bcd4; /* Cyan button color */
+    color: #ffffff; /* White button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.signup-button:hover, .search-container button:hover {
+    background-color: #008ba3; /* Darker cyan on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .form-container, .search-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
